@@ -13,7 +13,7 @@ public class CSVMappedToJavaBeanExample {
     @SuppressWarnings({"rawtypes", "unchecked"})
     public static void main(String[] args) throws Exception {
 
-        URL fileUrl = CSVMappedToJavaBeanExample.class.getClassLoader().getResource("data.csv");
+        URL fileUrl = CSVMappedToJavaBeanExample.class.getClassLoader().getResource("pronostico.csv");
         CSVReader csvReader = new CSVReader(new FileReader(fileUrl.getFile()));
 
         CsvToBean csv = new CsvToBean();

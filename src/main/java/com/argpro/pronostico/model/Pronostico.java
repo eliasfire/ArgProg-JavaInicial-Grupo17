@@ -1,5 +1,8 @@
 package com.argpro.pronostico.model;
 
+import com.argpro.pronostico.utils.ResultadoEnum;
+import com.argpro.pronostico.utils.TeamNotFound;
+
 public class Pronostico {
     private Partido partido;
     private Equipo equipo;
