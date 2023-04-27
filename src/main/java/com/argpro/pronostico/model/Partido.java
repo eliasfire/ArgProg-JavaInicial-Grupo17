@@ -28,27 +28,27 @@ public class Partido {
 
 
     public ResultadoEnum resultado(Equipo e) {
-        ResultadoEnum resul  = ResultadoEnum.empate;
+        ResultadoEnum resul  = ResultadoEnum.EMPATA;
         if(e.getNombre() == e1.getNombre()) {
             if(golesE1 > golesE2) {
-                resul = ResultadoEnum.ganador;
+                resul = ResultadoEnum.GANA;
             }
             if(golesE1 < golesE2) {
-                resul = ResultadoEnum.perdedor;
+                resul = ResultadoEnum.PIERDE;
             }
         }
 
         if(e.getNombre() == e2.getNombre()) {
             if(golesE2 > golesE1) {
-                resul = ResultadoEnum.ganador;
+                resul = ResultadoEnum.GANA;
             }
             if(golesE2 < golesE1) {
-                resul = ResultadoEnum.perdedor;
+                resul = ResultadoEnum.PIERDE;
             }
         }
 
         if(e.getNombre() != e1.getNombre() && e.getNombre() != e2.getNombre()) {
-            resul = ResultadoEnum.error;
+            resul = ResultadoEnum.ERROR;
         }
 
         return resul;

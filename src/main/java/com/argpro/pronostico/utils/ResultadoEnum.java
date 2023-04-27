@@ -1,3 +1,3 @@
 package com.argpro.pronostico.utils;
 
-public enum ResultadoEnum {ganador, perdedor, error, empate}
+public enum ResultadoEnum {GANA, PIERDE, ERROR, EMPATA}
