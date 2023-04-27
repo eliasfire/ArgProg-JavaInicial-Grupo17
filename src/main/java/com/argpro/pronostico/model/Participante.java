@@ -1,21 +1,12 @@
 package com.argpro.pronostico.model;
 
 public class Participante {
-	private Integer id;
 	private String nombre;
 	private int puntos;
 
-	public Participante(String nombre) {
-		super();
+	public Participante(String nombre, int puntos) {
 		this.nombre = nombre;
-	}
-
-	public Integer get_id() {
-		return id;
-	}
-
-	public void set_id(Integer id) {
-		this.id = id;
+		this.puntos = puntos;
 	}
 
 	public String get_nombre() {
